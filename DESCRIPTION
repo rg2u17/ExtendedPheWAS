@@ -1,0 +1,35 @@
+Package: ExtendedPheWAS
+Type: Package
+Title: Extended Phenome Wide Association Studies with Multi-Vocabulary Support
+Version: 0.1.0
+Authors@R: c(
+    person("Rob", "Howles", role = c("aut", "cre"), email = "rob.howles@example.com"))
+Description: Extends PheWAS to support ICD-9, ICD-10, OPCS-3, OPCS-4, Read
+    codes v2, Read codes v3, and SNOMED-CT. Provides automated NLP-based mapping
+    of surgical procedure codes to phenotype codes (phecodes), including new
+    procedure phecodes in the 1000+ range. Supports the full PheWAS analysis
+    pipeline including phenotype creation, association testing, and Manhattan
+    plot visualization across all supported vocabularies.
+License: GPL-3
+Depends:
+    R (>= 4.0.0),
+    PheWAS
+Imports:
+    dplyr,
+    tidyr,
+    ggplot2 (>= 3.0.0),
+    stringr,
+    stringdist,
+    rlang,
+    MASS
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    ggrepel,
+    DT
+LazyData: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+Config/testthat/edition: 3

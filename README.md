@@ -12,13 +12,6 @@ OPCS procedure codes are mapped to phecodes using a three-tier NLP matching stra
 remotes::install_github("rg2u17/ExtendedPheWAS")
 ```
 
-Or install from a local clone:
-
-```r
-# Clone the repo first, then:
-install.packages("path/to/ExtendedPheWAS", repos = NULL, type = "source")
-```
-
 ### Dependencies
 
 - **Required:** R (>= 4.0.0), [PheWAS](https://github.com/PheWAS/PheWAS)
